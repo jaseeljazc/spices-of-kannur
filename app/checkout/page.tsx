@@ -3,7 +3,7 @@ import { CheckoutPage } from "@/components/pages/CheckoutPage";
 
 export const metadata: Metadata = {
   title: "Checkout",
-  description: "Complete your Chef Shameem order.",
+  description: "Complete your Spices of Kannur order.",
 };
 
 export default function Checkout() {

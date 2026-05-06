@@ -49,7 +49,7 @@ export function ProductsPage() {
       <section style={{ background: "var(--color-charcoal)", padding: "120px 16px 64px", textAlign: "center", borderBottom: "1px solid rgba(212,175,55,0.15)" }}>
         <MehndiDivider opacity={0.3} className="w-full mb-10" />
         <ScrollReveal>
-          <p style={{ fontFamily: "var(--font-label)", fontSize: "11px", letterSpacing: "0.25em", color: "var(--color-gold)", marginBottom: "16px" }}>CHEF SHAMEEM</p>
+          <p style={{ fontFamily: "var(--font-label)", fontSize: "11px", letterSpacing: "0.25em", color: "var(--color-gold)", marginBottom: "16px" }}>SPICES OF KANNUR</p>
           <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(40px, 8vw, 72px)", fontWeight: 300, color: "var(--color-gold-pale)", margin: "0 0 20px", lineHeight: 1.1 }}>
             Heritage Spice Blends
           </h1>

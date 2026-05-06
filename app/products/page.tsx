@@ -3,7 +3,7 @@ import { ProductsPage } from "@/components/pages/ProductsPage";
 
 export const metadata: Metadata = {
   title: "Products",
-  description: "Shop Kannur Kalyana Biriyani Masala and Matghoot Masala — heritage spice blends by Chef Shameem.",
+  description: "Shop Kannur Kalyana Biriyani Masala and Matghoot Masala — heritage spice blends by Spices of Kannur.",
 };
 
 export default function Products() {

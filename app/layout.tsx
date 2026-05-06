@@ -43,24 +43,28 @@ const cinzel = Cinzel({
 
 export const metadata: Metadata = {
   title: {
-    default: "Chef Shameem — Heritage Spices from Kannur, Kerala",
-    template: "%s | Chef Shameem",
+    default: "Spices of Kannur — Heritage Spices from Kannur, Kerala",
+    template: "%s | Spices of Kannur",
   },
   description:
-    "Authentic Malabar spice blends crafted by Chef Shameem. Stone-ground in Kannur, Kerala. No preservatives, no compromise. Experience the soul of Thalassery biriyani.",
+    "Authentic Malabar spice blends crafted in Kannur, Kerala. Stone-ground, no preservatives, no compromise. Experience the soul of Thalassery biriyani.",
   keywords: [
-    "Biriyani Masala",
-    "Kannur spices",
-    "Malabar masala",
-    "Thalassery biriyani",
-    "Kerala spices",
-    "Chef Shameem",
-    "Matghoot",
+    "Kannur Masala",
+    "Malabar Spices",
+    "Thalassery Biriyani Masala",
+    "Heritage Spices",
+    "Kerala Spices",
+    "Kalyana Masala",
   ],
+  authors: [{ name: "Spices of Kannur" }],
+  creator: "Spices of Kannur",
+  publisher: "Spices of Kannur",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Chef Shameem",
+    url: "https://seventh-lounge.vercel.app",
+    siteName: "Spices of Kannur",
+    title: "Spices of Kannur — Heritage Spices from Kannur, Kerala",
   },
 };
 
