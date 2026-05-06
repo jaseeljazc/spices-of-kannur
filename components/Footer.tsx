@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -146,16 +147,23 @@ export function Footer() {
           <div style={{ opacity: 0 }}>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px" }}>
               <div style={{
-                width: 40, height: 40, borderRadius: "2px",
-                background: "var(--color-crimson)",
+                width: 48, height: 48, borderRadius: "2px",
+                background: "var(--color-charcoal)",
                 display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
                 border: "1px solid rgba(201,168,76,0.2)",
+                overflow: "hidden",
               }}>
-                <span style={{ color: "var(--color-gold)", fontSize: "14px", fontFamily: "var(--font-label)", letterSpacing: "0.1em" }}>SK</span>
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="Spices of Kannur Logo"
+                  width={48}
+                  height={48}
+                  style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                />
               </div>
               <div>
                 <div style={{ fontFamily: "var(--font-label)", fontSize: "11px", color: "var(--color-gold-pale)", letterSpacing: "0.2em" }}>SPICES OF KANNUR</div>
-                <div style={{ fontFamily: "var(--font-body)", fontSize: "9px", color: "rgba(201,168,76,0.45)", letterSpacing: "0.3em", marginTop: "2px" }}>KANNUR · KERALA</div>
+                <div style={{ fontFamily: "var(--font-body)", fontSize: "9px", color: "rgba(201,168,76,0.45)", letterSpacing: "0.3em", marginTop: "2px" }}>BY CHEF SHAMEEM</div>
               </div>
             </div>
 

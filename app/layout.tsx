@@ -65,6 +65,23 @@ export const metadata: Metadata = {
     url: "https://seventh-lounge.vercel.app",
     siteName: "Spices of Kannur",
     title: "Spices of Kannur — Heritage Spices from Kannur, Kerala",
+    images: [
+      {
+        url: "https://seventh-lounge.vercel.app/images/logo.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Spices of Kannur Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Spices of Kannur — Heritage Spices from Kannur, Kerala",
+    description: "Authentic Malabar spice blends crafted in Kannur, Kerala.",
+    images: ["https://seventh-lounge.vercel.app/images/logo.jpeg"],
+  },
+  icons: {
+    icon: "/images/logo.jpeg",
   },
 };
 

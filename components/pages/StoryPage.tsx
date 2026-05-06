@@ -99,7 +99,7 @@ export function TimelineSection() {
       ref={ref}
       style={{
         background: "var(--color-beige)",
-        padding: "96px 16px",
+        padding: "100px 16px",
         position: "relative",
         overflow: "hidden",
       }}
@@ -147,7 +147,7 @@ export function TimelineSection() {
             fontWeight: 400,
           }}
         >
-          Five Decades of Flavour
+           Decades of Flavour
         </h2>
       </ScrollReveal>
 
@@ -293,7 +293,7 @@ export function StoryPage() {
                 marginBottom: "32px",
               }}
             >
-              KANNUR · KERALA · INDIA
+              BY CHEF SHAMEEM
             </p>
           </ScrollReveal>
           <h1
@@ -447,7 +447,7 @@ export function ChefSection() {
     <section
       style={{
         background: "var(--color-beige)",
-        padding: "96px 16px",
+        padding: "100px 16px",
         position: "relative",
         overflow: "hidden",
       }}
@@ -505,7 +505,7 @@ export function ChefSection() {
             delay={0.8}
             style={{ position: "absolute", bottom: "15%", left: "-10%" }}
           >
-            <span className="premium-badge">20+ Years</span>
+            <span className="premium-badge">10+ Years</span>
           </ScrollReveal>
         </div>
         <div
@@ -546,15 +546,17 @@ export function ChefSection() {
                 fontSize: "15px",
                 color: "rgba(33,30,29,0.7)",
                 lineHeight: 1.8,
-                margin: "0 0 16px",
+                margin: "0 0 20px",
                 fontWeight: 300,
               }}
             >
-              Hailing from Kannur, a region celebrated for its rich culinary
-              traditions, our path to the kitchen was anything but ordinary.
-              While working in Dubai for eight years, extensive travels sparked
-              a deep passion for global cuisines. We began recreating dishes at
-              home, gradually refining our skills.
+              Chef Shameem's journey to the kitchen was anything but
+              conventional. Hailing from Kannur — a land celebrated for its bold
+              culinary heritage — he spent eight years as an IT Consultant in
+              Dubai, where extensive travels across cultures ignited a deep and
+              unexpected passion for food. What began as quiet experiments at
+              home, recreating dishes from his travels, gradually evolved into a
+              serious culinary craft.
             </p>
             <p
               style={{
@@ -562,16 +564,19 @@ export function ChefSection() {
                 fontSize: "15px",
                 color: "rgba(33,30,29,0.7)",
                 lineHeight: 1.8,
-                margin: "0 0 16px",
+                margin: "0 0 20px",
                 fontWeight: 300,
               }}
             >
-              A strategic shift saw him focusing on restaurant clients in his IT
-              role, gaining crucial insights into the food industry ecosystem.
               His defining moment came on Mazhavil Manorama's{" "}
-              <strong>Dhe Chef</strong>. Encouraged by family, this experience
-              gave him the confidence to leave his stable IT career and trust
-              his culinary instincts.
+              <strong>Dhe Chef</strong>, where encouragement from a close family
+              member gave him the courage to step into the spotlight. That
+              experience validated his abilities and inspired him to leave a
+              stable IT career and fully commit to his culinary calling. He went
+              on to serve at an <strong>Indian Navy</strong> restaurant between
+              2016 and 2018, where his food was presented to Indian Defence
+              Ministers — a milestone that established his credibility and
+              excellence.
             </p>
             <p
               style={{
@@ -583,13 +588,15 @@ export function ChefSection() {
                 fontWeight: 300,
               }}
             >
-              Today, his philosophy is rooted in authenticity. Drawing
-              inspiration from Kannur and Turkish cuisines, he is known for
-              innovative creations like his signature{" "}
-              <strong>Dessert Pizza</strong>. What truly sets him apart is his
-              unwavering commitment to purity—creating his own masalas from
-              natural ingredients, entirely avoiding artificial or pre-made
-              mixes.
+              Today, Chef Shameem draws inspiration from the robust traditions
+              of Kannur cuisine and the aromatic elegance of Turkish cuisine,
+              known for signature innovations like his celebrated{" "}
+              <strong>Dessert Pizza</strong>. What truly sets him apart — and
+              what defines every product under Spices of Kannur — is his
+              unwavering commitment to purity. He crafts every masala by hand,
+              from natural ingredients alone, entirely avoiding artificial
+              additives or pre-made mixes. Spices of Kannur is that philosophy,
+              bottled for your kitchen.
             </p>
           </ScrollReveal>
         </div>
@@ -670,7 +677,7 @@ export function ValuesSection() {
       ref={containerRef}
       style={{
         background: "var(--color-charcoal)",
-        padding: "96px 16px 32px",
+        padding: "100px 16px",
         position: "relative",
         overflow: "hidden",
       }}
@@ -790,8 +797,15 @@ export function ValuesSection() {
 
       <style>{`
         .values-grid { display: flex; flex-direction: column; gap: 24px; max-width: 1200px; margin: 0 auto; }
-        @media (min-width: 768px) { .values-grid { flex-direction: row !important; } .values-grid > * { flex: 1; } }
-        @media (min-width: 1280px) { #values { padding: 140px 80px !important; } }
+        @media (min-width: 768px) { 
+          .values-grid { flex-direction: row !important; gap: 32px; } 
+          .values-grid > * { flex: 1; } 
+        }
+        @media (min-width: 1024px) { 
+          #values { padding: 140px 80px !important; } 
+          #timeline { padding-top: 140px !important; padding-bottom: 140px !important; }
+          .values-grid { gap: 40px; }
+        }
       `}</style>
     </section>
   );

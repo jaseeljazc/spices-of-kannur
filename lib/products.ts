@@ -35,7 +35,7 @@ export const products: Product[] = [
     slug: "kannur-kalyana-biriyani-masala",
     tagline: "The secret behind every Malabar wedding feast",
     weight: "200g",
-    price: 249,
+    price: 1999,
     currency: "₹",
     usage: "2 tsp for 1 kg",
     variants: [
@@ -64,7 +64,7 @@ export const products: Product[] = [
     slug: "matghoot-masala",
     tagline: "Born from the clay pots of Malabar kitchens",
     weight: "200g",
-    price: 229,
+    price: 1999,
     currency: "₹",
     usage: "2 tsp for 1 kg",
     variants: [

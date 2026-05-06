@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ShoppingBag, X, Menu } from "lucide-react";
@@ -159,8 +160,8 @@ export function Navbar() {
         >
           <div
             style={{
-              width: 36,
-              height: 36,
+              width: 42,
+              height: 42,
               borderRadius: "2px",
               background: "var(--color-charcoal)",
               display: "flex",
@@ -168,17 +169,16 @@ export function Navbar() {
               justifyContent: "center",
               flexShrink: 0,
               border: "1px solid rgba(212,175,55,0.3)",
+              overflow: "hidden",
             }}
           >
-            <span
-              style={{
-                color: "var(--color-gold)",
-                fontSize: "16px",
-                fontFamily: "var(--font-label)",
-              }}
-            >
-              SK
-            </span>
+            <Image
+              src="/images/logo.jpeg"
+              alt="Spices of Kannur Logo"
+              width={42}
+              height={42}
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            />
           </div>
           <div style={{ lineHeight: 1.1 }}>
             <div
@@ -200,7 +200,7 @@ export function Navbar() {
                 fontWeight: 400,
               }}
             >
-              KANNUR · KERALA
+            BY CHEF SHAMEEM
             </div>
           </div>
         </Link>

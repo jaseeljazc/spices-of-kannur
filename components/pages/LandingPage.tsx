@@ -547,7 +547,7 @@ function HeroSection() {
           }}
         >
           {/* Kicker */}
-          <div style={{ opacity: 0, marginBottom: "40px" }}>
+          <div style={{ opacity: 0, marginBottom: "16px" }}>
             <p
               style={{
                 fontFamily: "var(--font-label)",
@@ -634,7 +634,7 @@ function HeroSection() {
               margin: "0 0 52px",
             }}
           >
-            Stone-ground heritage spice blends — hand-crafted for authentic
+            Heritage spice blends — hand-crafted for authentic
             Malabar wedding feasts. No preservatives. No compromise.
           </p>
 
@@ -656,7 +656,8 @@ function HeroSection() {
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   background: "var(--color-gold)",
-                  color: "var(--color-charcoal)",
+                  color: "#000",
+                  fontWeight: 600,
                   border: "none",
                   padding: "18px 36px",
                   cursor: "pointer",
@@ -749,42 +750,6 @@ function HeroSection() {
             }}
           />
 
-          {/* Floating badge */}
-          <div
-            style={{
-              position: "absolute",
-              top: "10%",
-              right: "8%",
-              background: "rgba(33,30,29,0.7)",
-              backdropFilter: "blur(12px)",
-              border: "1px solid rgba(201,168,76,0.25)",
-              padding: "16px 22px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "4px",
-            }}
-          >
-            <span
-              style={{
-                fontFamily: "var(--font-label)",
-                fontSize: "9px",
-                letterSpacing: "0.3em",
-                color: "var(--color-gold)",
-              }}
-            >
-              100% NATURAL
-            </span>
-            <span
-              style={{
-                fontFamily: "var(--font-heading)",
-                fontSize: "18px",
-                color: "var(--color-gold-pale)",
-                fontWeight: 400,
-              }}
-            >
-              Stone Ground
-            </span>
-          </div>
 
           {/* Corner text */}
           <div
@@ -941,7 +906,7 @@ function WhySection() {
           <circle cx="20" cy="5" r="2" fill="#C9A84C" opacity="0.4" />
         </svg>
       ),
-      title: "Stone-Ground Spices",
+      title: "Traditionally Ground Spices",
       body: "Traditional chakki grinding preserves volatile oils that machine-grinding destroys.",
     },
     {
@@ -977,9 +942,10 @@ function WhySection() {
 
   return (
     <section
+      id="why-section"
       style={{
         background: "var(--color-beige)",
-        padding: "96px 16px",
+        padding: "100px 16px",
         position: "relative",
         overflow: "hidden",
       }}
@@ -1141,8 +1107,14 @@ function WhySection() {
       </StaggerReveal>
 
       <style>{`
-        .why-grid { display: flex; flex-direction: column; gap: 20px; max-width: 1100px; margin: 0 auto; }
-        @media (min-width: 768px) { .why-grid { flex-direction: row !important; } .why-grid > * { flex: 1; } }
+        #why-section { padding-top: 100px !important; padding-bottom: 100px !important; }
+        .why-grid { display: flex; flex-direction: column; gap: 24px; max-width: 1100px; margin: 0 auto; }
+        @media (min-width: 768px) { 
+          #why-section { padding: 140px 40px !important; }
+          .why-grid { flex-direction: row !important; gap: 32px; } 
+          .why-grid > * { flex: 1; } 
+        }
+        @media (min-width: 1280px) { #why-section { padding: 140px 80px !important; } .why-grid { gap: 40px; } }
         @media (min-width: 1280px) { section:has(.why-grid) { padding: 120px 80px !important; } }
       `}</style>
     </section>
@@ -1155,9 +1127,10 @@ function WhySection() {
 function ProductTeaser() {
   return (
     <section
+      id="product-teaser"
       style={{
         background: "var(--color-charcoal)",
-        padding: "100px 0",
+        padding: "100px 16px",
         position: "relative",
         overflow: "hidden",
       }}
@@ -1219,7 +1192,7 @@ function ProductTeaser() {
             marginBottom: "14px",
           }}
         >
-          Small-batch · Stone-ground · Hand-blended
+          Small-batch · Hand-blended
         </p>
         <h2
           style={{
@@ -1331,7 +1304,17 @@ function ProductTeaser() {
       </div>
 
       <style>{`
-        .pt-cards { display: flex; flex-direction: column; gap: 80px; padding: 0 24px; max-width: 900px; margin: 0 auto; }
+        #product-teaser { padding-top: 100px !important; padding-bottom: 100px !important; }
+        .pt-cards { display: flex; flex-direction: column; gap: 40px; padding: 0; max-width: 1200px; margin: 0 auto; }
+        @media (min-width: 768px) {
+          #product-teaser { padding: 140px 40px !important; }
+          .pt-cards { flex-direction: row !important; flex-wrap: wrap; justify-content: center; gap: 32px; }
+          .pt-card-new { flex: 1; min-width: 300px; }
+        }
+        @media (min-width: 1280px) {
+          #product-teaser { padding: 140px 80px !important; }
+          .pt-cards { gap: 40px; }
+        }
         .pt-card-link { display: flex; flex-direction: column; align-items: center; gap: 24px; text-decoration: none; text-align: center; }
         .pt-card-img-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
         .pt-card-text { display: flex; flex-direction: column; align-items: center; }
@@ -1478,7 +1461,7 @@ function ProductStorySection() {
       id="product-story"
       style={{
         background: "var(--color-charcoal)",
-        padding: "120px 0",
+        padding: "140px 0",
         borderTop: "1px solid rgba(201, 168, 76, 0.1)",
         overflow: "hidden",
       }}

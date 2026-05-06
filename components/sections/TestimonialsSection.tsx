@@ -67,9 +67,10 @@ export function TestimonialsSection() {
 
   return (
     <section
+      id="community-section"
       style={{
         background: "var(--color-charcoal)",
-        padding: "0 0 96px",
+        padding: "100px 0",
         position: "relative",
         overflow: "hidden",
       }}
@@ -288,7 +289,7 @@ export function TestimonialsSection() {
         @media (min-width: 1024px) {
           .testimonials-mobile { display: none !important; }
           .testimonials-desktop { display: flex !important; }
-          section:has(.testimonials-desktop) { padding: 40px 0 140px !important; }
+          #community-section { padding-top: 140px !important; padding-bottom: 140px !important; }
         }
       `}</style>
     </section>

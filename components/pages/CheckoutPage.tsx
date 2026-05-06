@@ -186,7 +186,13 @@ export function CheckoutPage() {
               </div>
 
               <div style={{ display: "flex", gap: "16px" }}>
-                <button onClick={() => setStep(1)} style={{ flex: "0 0 auto", minHeight: "56px", padding: "0 24px", background: "transparent", border: "1px solid rgba(212,175,55,0.4)", color: "var(--color-crimson)", fontFamily: "var(--font-label)", fontSize: "11px", letterSpacing: "0.15em", cursor: "pointer", borderRadius: "2px", transition: "all 0.3s" }} className="hover-fill-btn">BACK</button>
+                <Button 
+                  variant="ghost" 
+                  onClick={() => setStep(1)}
+                  style={{ flex: "0 0 120px" }}
+                >
+                  BACK
+                </Button>
                 <Button variant="primary" fullWidth id="place-order" onClick={() => setStep(3)}>PLACE ORDER</Button>
               </div>
             </div>

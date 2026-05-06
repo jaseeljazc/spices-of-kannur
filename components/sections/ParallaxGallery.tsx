@@ -26,13 +26,13 @@ export function ParallaxGallery() {
     
     cards.forEach((card) => {
       gsap.to(card, {
-        y: "-33.33%", // Max possible parallax with 150% height
+        y: "-44.44%", // More pronounced parallax with 180% height
         ease: "none",
         scrollTrigger: {
           trigger: card.parentElement,
           start: "top bottom",
           end: "bottom top",
-          scrub: true,
+          scrub: 0.8, // Smoother feel on touch devices
         }
       });
     });
@@ -56,7 +56,7 @@ export function ParallaxGallery() {
               <img 
                 src={img.src} 
                 alt={img.title}
-                style={{ width: "100%", height: "150%", objectFit: "cover", display: "block" }} 
+                style={{ width: "100%", height: "180%", objectFit: "cover", display: "block" }} 
               />
               <div className="parallax-card-overlay">
                 <span style={{ fontFamily: "var(--font-label)", fontSize: "8px", letterSpacing: "0.1em", color: "var(--color-gold)" }}>{img.type.toUpperCase()}</span>
@@ -96,7 +96,7 @@ export function ParallaxGallery() {
           top: 0;
           left: 0;
           width: 100%;
-          height: 150%; /* Deepest possible for square cards */
+          height: 180%; /* Increased for deeper parallax */
           will-change: transform;
         }
         
