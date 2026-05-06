@@ -13,6 +13,7 @@ type ButtonProps = {
   disabled?: boolean;
   fullWidth?: boolean;
   id?: string;
+  style?: React.CSSProperties;
 };
 
 export function Button({
@@ -24,6 +25,7 @@ export function Button({
   disabled = false,
   fullWidth = false,
   id,
+  style,
 }: ButtonProps) {
 
 
@@ -44,6 +46,7 @@ export function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
+      style={style}
       className={`${base} ${variants[variant]} ${widthClass} ${className} hover:scale-[1.02] active:scale-95`}
     >
       {children}
